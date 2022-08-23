@@ -1,0 +1,313 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --blue: #2196f3;
+  --darkgrey: #2f303a;
+  --grey: #757575;
+  --lightgrey: #e5e5e5;
+  --lightcream: #ececec;
+  --notblack: #212121;
+  --notwhite: #f5f4fa;
+  --footerlinks: #ffffff99;
+  --productborder: #eeeeee;
+  --background: #2f303a66;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+.blue-text:hover,
+.blue-text:focus {
+  color: var(--blue);
+}
+/*header*/
+.logoweb {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  color: var(--blue);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logostudio {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  color: var(--black);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.links-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
+  gap: 8px;
+}
+.nav-style {
+  list-style: none;
+}
+.blue-text {
+  color: var(--blue);
+}
+.links-style {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.172;
+  color: var(--black);
+}
+.links-no-underline {
+  text-decoration: none;
+}
+.links {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.links:hover {
+  color: var(--blue);
+  text-decoration-line: underline;
+}
+.links:focus {
+  color: var(--blue);
+}
+.contact-link-style {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--grey);
+}
+/* first-section */
+.f-section-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  color: var(--white);
+  text-decoration: none;
+  text-align: center;
+}
+.f-section-background {
+  background-color: var(--darkgrey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 0;
+}
+.f-section-button {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  background-color: var(--blue);
+  border-style: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 200px;
+  cursor: pointer;
+}
+/* lorem ipsum section */
+.lor-ips-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
+}
+.lor-ips-header {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.143;
+  width: 270px;
+  height: 16px;
+  color: var(--notblack);
+}
+.lor-ips-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.714;
+  width: 270px;
+  height: 75px;
+  color: var(--grey);
+}
+/* services */
+.services-header {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.166;
+  text-align: center;
+  color: var(--notblack);
+}
+.services-img {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+/* team section*/
+.team-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  color: var(--notblack);
+}
+.team-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.team-name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.188;
+  text-align: center;
+  color: var(--notblack);
+}
+.team-profession {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.188;
+  text-align: center;
+  color: var(--grey);
+}
+.team-background {
+  background-color: var(--notwhite);
+}
+/* footer */
+.footer-background {
+  background-color: var(--darkgrey);
+}
+.footer-logo {
+  font-family: Raleway;
+  font-style: normal;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+}
+.footer-adress {
+  font-family: 'Roboto';
+  font-style: normal;
+  color: var(--white);
+  line-height: 1.714;
+}
+.footer-ul-style {
+  list-style: none;
+  text-decoration: none;
+}
+.footer-mail {
+  font-family: 'Roboto';
+  font-style: normal;
+  line-height: 1.714;
+  color: var(--footerlinks);
+}
+/* P O R T F O L I O */
+.nav-button {
+  color: var(--notblack);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  background-color: var(--notwhite);
+  border-style: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  width: 121px;
+  cursor: pointer;
+}
+.nav-button:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+/* Project Base */
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--notblack);
+  list-style: none;
+  padding-left: 24px;
+}
+.project-subtitle {
+  line-height: 1.875;
+  padding-left: 24px;
+}
+.projects-lists {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1170px;
+  margin-top: 94px;
+  margin-bottom: 94px;
+  margin-left: 215px;
+  margin-right: 215px;
+  column-gap: 30px;
+  row-gap: 30px;
+  line-gap-override: 30px;
+}
+.outbox {
+  box-sizing: border-box;
+  box-shadow: none;
+  width: 370px;
+  height: 404px;
+  border-radius: 1px;
+  border-color: var(--productborder);
+  border-style: solid;
+}
+.portfolio-top {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.shift-agencja {
+  padding-left: 93px;
+}
+.shift-web {
+  padding-left: 215px;
+}
+.contact {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  padding-left: 364px;
+}
+/* .outbox-main {
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 270px;
+  height: 368px;
+  border-color: var(--productborder);
+  border-style: solid;
+  background-color: var(--white);
+  border-radius: 0px 0px 4px 4px;
+  padding-top: 280px;
+} */
+/* "outbox-main" - celowo skomentowane. Jeszcze nad tym pracuję. */
