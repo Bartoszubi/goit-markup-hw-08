@@ -13,8 +13,7 @@
   --background: #2f303a66;
 }
 body {
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Raleway', sans-serif;
   color: var(--grey);
   font-size: 14px;
   font-weight: 400;
@@ -53,6 +52,7 @@ body {
 }
 .nav-style {
   list-style: none;
+  text-decoration: none;
 }
 .blue-text {
   color: var(--blue);
@@ -76,7 +76,7 @@ body {
 }
 .links:hover {
   color: var(--blue);
-  text-decoration-line: underline;
+  text-decoration: none;
 }
 .links:focus {
   color: var(--blue);
@@ -86,6 +86,10 @@ body {
   font-weight: 500;
   font-size: 14px;
   color: var(--grey);
+  list-style: none;
+}
+.contact-link-style:hover {
+  color: var(--blue);
 }
 /* first-section */
 .f-section-text {
@@ -221,10 +225,15 @@ body {
   font-style: normal;
   line-height: 1.714;
   color: var(--footerlinks);
+  text-decoration: none;
+}
+.footer-mail:hover {
+  color: var(--white);
 }
 /* P O R T F O L I O */
 .nav-button {
   color: var(--notblack);
+  font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -240,10 +249,6 @@ body {
   width: 121px;
   cursor: pointer;
 }
-.nav-button:hover {
-  background-color: var(--blue);
-  color: var(--white);
-}
 /* Project Base */
 .project-title {
   font-weight: 700;
@@ -256,6 +261,7 @@ body {
 .project-subtitle {
   line-height: 1.875;
   padding-left: 24px;
+  font-size: 16px;
 }
 .projects-lists {
   list-style: none;
@@ -284,6 +290,7 @@ body {
   list-style: none;
   display: flex;
   flex-direction: row;
+  text-decoration: none;
 }
 .shift-agencja {
   padding-left: 93px;
@@ -298,6 +305,19 @@ body {
   column-gap: 50px;
   padding-left: 364px;
 }
+.nav-button:focus {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.nav-button-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
+  gap: 8px;
+}
+
 /* .outbox-main {
   box-sizing: border-box;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
