@@ -53,6 +53,7 @@ body {
 .nav-style {
   list-style: none;
   text-decoration: none;
+  font-family: 'Roboto';
 }
 .blue-text {
   color: var(--blue);
@@ -74,12 +75,10 @@ body {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
-.links:hover {
-  color: var(--blue);
-  text-decoration: none;
-}
+.links:hover,
 .links:focus {
   color: var(--blue);
+  text-decoration: none;
 }
 .contact-link-style {
   text-decoration: none;
@@ -88,11 +87,13 @@ body {
   color: var(--grey);
   list-style: none;
 }
-.contact-link-style:hover {
+.contact-link-style:hover,
+.contact-link-style:focus {
   color: var(--blue);
 }
 /* first-section */
 .f-section-text {
+  font-family: 'Roboto';
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
@@ -109,6 +110,7 @@ body {
   padding: 200px 0;
 }
 .f-section-button {
+  font-family: 'Roboto';
   color: var(--white);
   font-weight: 700;
   font-size: 16px;
@@ -228,7 +230,7 @@ body {
   text-decoration: none;
 }
 .footer-mail:hover {
-  color: var(--white);
+  color: var(--blue);
 }
 /* P O R T F O L I O */
 .nav-button {
@@ -305,7 +307,8 @@ body {
   column-gap: 50px;
   padding-left: 364px;
 }
-.nav-button:focus {
+.nav-button:focus,
+.nav-button:hover {
   background-color: var(--blue);
   color: var(--white);
 }
@@ -316,6 +319,7 @@ body {
   text-decoration: none;
   list-style: none;
   gap: 8px;
+  font-family: 'Roboto';
 }
 
 /* .outbox-main {
