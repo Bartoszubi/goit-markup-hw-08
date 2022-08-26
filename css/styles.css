@@ -78,7 +78,12 @@ body {
 .links:hover,
 .links:focus {
   color: var(--blue);
-  text-decoration: none;
+}
+.blue-portfolio {
+  color: var(--blue);
+}
+.blue-index {
+  color: var(--blue);
 }
 .contact-link-style {
   text-decoration: none;
@@ -307,7 +312,6 @@ body {
   column-gap: 50px;
   padding-left: 364px;
 }
-.nav-button:focus,
 .nav-button:hover {
   background-color: var(--blue);
   color: var(--white);
