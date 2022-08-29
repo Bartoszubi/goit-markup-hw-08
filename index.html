@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="fontfamily.css" />
     <link
@@ -12,11 +16,11 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header>
+  <body class="body-background">
+    <header class="header container section no-padding">
       <a href="./index.html" class="logoweb">Web<span class="logostudio">Studio</span></a>
       <nav>
-        <ul class="nav-style links-display">
+        <ul class="container nav-style links-display">
           <li>
             <a href="./index.html" class="links blue-index">Agencja</a>
           </li>
@@ -37,47 +41,54 @@
         </li>
       </ul>
     </header>
+    <div class="border-bottom"></div>
     <main>
       <section>
-        <h1 class="f-section-text f-section-background">
+        <h1 class="f-section-text f-section-background no-margin">
           EFEKTYWNE ROZWIĄZANIA <br />
           DLA WASZEGO BIZNESU
           <button type="button" class="f-section-button">Zamów usługę</button>
         </h1>
       </section>
       <section>
-        <ul class="lor-ips-ul">
-          <li>
-            <p class="lor-ips-header">LOREM IPSUM</p>
-            <p class="lor-ips-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-              sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li>
-            <p class="lor-ips-header">LOREM IPSUM</p>
-            <p class="lor-ips-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-              sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li>
-            <p class="lor-ips-header">LOREM IPSUM</p>
-            <p class="lor-ips-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-              sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li>
-            <p class="lor-ips-header">LOREM IPSUM</p>
-            <p class="lor-ips-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-              sodales dui. Interdum et malesuada
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="lor-ips-ul">
+            <li>
+              <p class="lor-ips-header">LOREM IPSUM</p>
+              <p class="lor-ips-text no-margin">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                <br />
+                non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li>
+              <p class="lor-ips-header">LOREM IPSUM</p>
+              <p class="lor-ips-text no-margin">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                <br />
+                non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li>
+              <p class="lor-ips-header">LOREM IPSUM</p>
+              <p class="lor-ips-text no-margin">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                <br />
+                non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+            <li>
+              <p class="lor-ips-header">LOREM IPSUM</p>
+              <p class="lor-ips-text no-margin">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed
+                <br />
+                non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
+      <section class="section container">
         <h2 class="services-header">Czym się zajmujemy?</h2>
         <ul class="services-img">
           <li>
@@ -91,12 +102,12 @@
           </li>
         </ul>
       </section>
-      <section>
-        <div class="team-background">
-          <h2 class="team-header">Nasz zespół</h2>
-          <ul class="team-ul">
-            <li>
-              <figure>
+      <section class="team-background section">
+        <div class="container">
+          <h2 class="team-header no-margin">Nasz zespół</h2>
+          <ul class="team-ul no-margin">
+            <li class="team-card">
+              <figure class="no-margin">
                 <img src="images/img-a.jpg" alt="product-designer" width="270" height="260" />
                 <figcaption>
                   <p class="team-name">John Doe</p>
@@ -104,8 +115,8 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
+            <li class="team-card">
+              <figure class="no-margin">
                 <img src="images/img-b.jpg" alt="frontend-developer" width="270" height="260" />
                 <figcaption>
                   <p class="team-name">John Doe</p>
@@ -113,8 +124,8 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
+            <li class="team-card">
+              <figure class="no-margin">
                 <img src="images/img-c.jpg" alt="marketing" width="270" height="260" />
                 <figcaption>
                   <p class="team-name">John Doe</p>
@@ -122,8 +133,8 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
+            <li class="team-card">
+              <figure class="no-margin">
                 <img src="images/img-d.jpg" alt="ui-designer" width="270" height="260" />
                 <figcaption>
                   <p class="team-name">John Doe</p>
@@ -135,13 +146,13 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer-background">
+    <footer class="footer-background">
+      <div class="container footer-box">
         <a href="./index.html" class="footer-logo links-no-underline"
           ><span class="blue-text">Web</span>Studio</a
         >
         <address>
-          <ul class="footer-ul-style">
+          <ul class="container footer-ul-style no-margin no-padding">
             <li>
               <p class="footer-adress">m. Warszawa, Aleje Jerozolimskie 21</p>
             </li>

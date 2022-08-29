@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="fontfamily.css" />
     <link
@@ -12,16 +16,16 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header>
-      <a href="./portfolio.html" class="logoweb">Web<span class="logostudio">Studio</span></a>
+  <body class="body-background">
+    <header class="header container section no-padding">
+      <a href="./index.html" class="logoweb">Web<span class="logostudio">Studio</span></a>
       <nav>
-        <ul class="nav-style links-display">
+        <ul class="container nav-style links-display">
           <li>
-            <a href="./index.html" class="links">Agencja</a>
+            <a href="./index.html" class="links blue-index">Agencja</a>
           </li>
           <li>
-            <a href="./portfolio.html" class="links blue-portfolio">Portfolio</a>
+            <a href="./portfolio.html" class="links">Portfolio</a>
           </li>
           <li>
             <a href="./contacts.html" class="links">Kontakt</a>
@@ -37,83 +41,111 @@
         </li>
       </ul>
     </header>
-    <main>
+    <div class="border-bottom"></div>
+    <main class="background-color">
       <section>
-        <ul class="nav-style nav-button-display">
-          <li>
-            <button type="button" class="nav-button">Wszystkie</button>
-          </li>
-          <li>
-            <button type="button" class="nav-button">Strony</button>
-          </li>
-          <li>
-            <button type="button" class="nav-button">Aplikacje</button>
-          </li>
-          <li>
-            <button type="button" class="nav-button">Dizajn</button>
-          </li>
-          <li>
-            <button type="button" class="nav-button">Marketing</button>
-          </li>
-        </ul>
+        <div class="container background-color">
+          <ul class="nav-style nav-button-display">
+            <li>
+              <button type="button" class="nav-button">Wszystkie</button>
+            </li>
+            <li>
+              <button type="button" class="nav-button">Strony</button>
+            </li>
+            <li>
+              <button type="button" class="nav-button">Aplikacje</button>
+            </li>
+            <li>
+              <button type="button" class="nav-button">Dizajn</button>
+            </li>
+            <li>
+              <button type="button" class="nav-button">Marketing</button>
+            </li>
+          </ul>
+        </div>
       </section>
       <section>
-        <ul class="nav-style projects-lists">
-          <li class="outbox">
-            <img src="images/imgport-a.jpg" alt="websitepicture" width="370" height="294" />
-            <h3 class="project-title">Technocrack</h3>
-            <p class="project-subtitle">Strona internetowa</p>
-          </li>
-          <li class="outbox">
-            <img src="images/imgport-b.jpg" alt="basketballplayers" width="370" height="294" />
-            <h3 class="project-title">Grafika New Orlean vs Golden Star</h3>
-            <p class="project-subtitle">Dizajn</p>
-          </li>
-          <li class="outbox">
-            <img src="images/imgport-c.jpg" alt="seafoodrestaurantlogo" width="370" height="294" />
-            <h3 class="project-title">Restauracja Seafood</h3>
-            <p class="project-subtitle">Aplikacja</p>
-          </li>
-          <li class="outbox">
-            <img src="images/imgport-d.jpg" alt="headphones" width="370" height="294" />
-            <h3 class="project-title">Projekt Prime</h3>
-            <p class="project-subtitle">Marketing</p>
-          </li>
-          <li class="outbox">
-            <img src="images/imgport-e.jpg" alt="boxeswhiteandbrown" width="370" height="294" />
-            <h3 class="project-title">Projekt Boxes</h3>
-            <p class="project-subtitle">Aplikacja</p>
-          </li>
-          <li class="outbox">
-            <img src="images/imgport-f.jpg" alt="computermonitor" width="370" height="294" />
-            <h3 class="project-title">Inspiration has no Borders</h3>
-            <p class="project-subtitle">Strona internetowa</p>
-          </li>
-          <li class="outbox">
-            <img src="images/imgport-g.jpg" alt="bookpages" width="370" height="294" />
-            <h3 class="project-title">Magazyn Limited Edition</h3>
-            <p class="project-subtitle">Dizajn</p>
-          </li>
-          <li class="outbox">
-            <img src="images/imgport-h.jpg" alt="labeltag" width="370" height="294" />
-            <h3 class="project-title">Projekt LAB</h3>
-            <p class="project-subtitle">Marketing</p>
-          </li>
-          <li class="outbox">
-            <img src="images/imgport-i.jpg" alt="keyboardtyping" width="370" height="294" />
-            <h3 class="project-title">Growing Business</h3>
-            <p class="project-subtitle">Aplikacja</p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="nav-style projects-lists section">
+            <li>
+              <img src="images/imgport-a.jpg" alt="websitepicture" width="370" height="294" />
+              <div class="outbox">
+                <h3 class="project-title">Technocrack</h3>
+                <p class="project-subtitle">Strona internetowa</p>
+              </div>
+            </li>
+            <li>
+              <img src="images/imgport-b.jpg" alt="basketballplayers" width="370" height="294" />
+              <div class="outbox">
+                <h3 class="project-title">Grafika New Orlean vs Golden Star</h3>
+                <p class="project-subtitle">Dizajn</p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="images/imgport-c.jpg"
+                alt="seafoodrestaurantlogo"
+                width="370"
+                height="294"
+              />
+              <div class="outbox">
+                <h3 class="project-title">Restauracja Seafood</h3>
+                <p class="project-subtitle">Aplikacja</p>
+              </div>
+            </li>
+            <li>
+              <img src="images/imgport-d.jpg" alt="headphones" width="370" height="294" />
+              <div class="outbox">
+                <h3 class="project-title">Projekt Prime</h3>
+                <p class="project-subtitle">Marketing</p>
+              </div>
+            </li>
+            <li>
+              <img src="images/imgport-e.jpg" alt="boxeswhiteandbrown" width="370" height="294" />
+              <div class="outbox">
+                <h3 class="project-title">Projekt Boxes</h3>
+                <p class="project-subtitle">Aplikacja</p>
+              </div>
+            </li>
+            <li>
+              <img src="images/imgport-f.jpg" alt="computermonitor" width="370" height="294" />
+              <div class="outbox">
+                <h3 class="project-title">Inspiration has no Borders</h3>
+                <p class="project-subtitle">Strona internetowa</p>
+              </div>
+            </li>
+            <li>
+              <img src="images/imgport-g.jpg" alt="bookpages" width="370" height="294" />
+              <div class="outbox">
+                <h3 class="project-title">Magazyn Limited Edition</h3>
+                <p class="project-subtitle">Dizajn</p>
+              </div>
+            </li>
+            <li>
+              <img src="images/imgport-h.jpg" alt="labeltag" width="370" height="294" />
+              <div class="outbox">
+                <h3 class="project-title">Projekt LAB</h3>
+                <p class="project-subtitle">Marketing</p>
+              </div>
+            </li>
+            <li>
+              <img src="images/imgport-i.jpg" alt="keyboardtyping" width="370" height="294" />
+              <div class="outbox">
+                <h3 class="project-title">Growing Business</h3>
+                <p class="project-subtitle">Aplikacja</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer>
-      <div class="footer-background">
+    <footer class="footer-background">
+      <div class="container footer-box">
         <a href="./index.html" class="footer-logo links-no-underline"
           ><span class="blue-text">Web</span>Studio</a
         >
         <address>
-          <ul class="footer-ul-style">
+          <ul class="container footer-ul-style no-margin no-padding">
             <li>
               <p class="footer-adress">m. Warszawa, Aleje Jerozolimskie 21</p>
             </li>
