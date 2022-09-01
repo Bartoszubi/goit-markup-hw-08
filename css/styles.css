@@ -25,7 +25,9 @@ body {
   font-style: normal;
 }
 p {
-  margin:0px;}
+  margin:0px;
+  padding: 0px;
+}
   h1 {
     margin: 0px;
     padding: 0px;
@@ -168,6 +170,7 @@ p {
   height: 50px;
   width: 200px;
   cursor: pointer;
+  margin-top: 15px;
 }
 /* lorem ipsum section */
 .lor-ips-ul {
@@ -343,6 +346,7 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
+  margin-bottom: 94px;
   padding: 0px;
   gap: 30px
   /* list-style: none;
