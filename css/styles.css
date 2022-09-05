@@ -11,6 +11,7 @@
   --footerlinks: #ffffff99;
   --productborder: #eeeeee;
   --background: #2f303a66;
+  --icon-inactive: #afb1b8;
 }
 *,
 *::before,
@@ -25,24 +26,31 @@ body {
   font-style: normal;
 }
 p {
-  margin:0px;
+  margin: 0px;
   padding: 0px;
 }
-  h1 {
-    margin: 0px;
-    padding: 0px;
-  }
-  h2 {
-    margin:0px;
-    padding: 0px;
-  }
-  h3 {margin: 0px;
-    padding: 0px
-  }
-  ul {
-    margin: 0px;
-    padding:0px
-  }
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+h2 {
+  padding: 0px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0 0 50px 0;
+  color: var(--notblack);
+}
+h3 {
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
 .blue-text:hover,
 .blue-text:focus {
   color: var(--blue);
@@ -125,7 +133,7 @@ p {
   color: var(--grey);
   list-style: none;
   flex-direction: row;
-  margin-left:auto;
+  margin-left: auto;
   display: flex;
   gap: 50px;
   padding: 0;
@@ -151,7 +159,10 @@ p {
   align-items: center;
   justify-content: center;
   padding: 200px 0;
-  width: 100%;
+  /* width: 100%; */
+  background-image: url('../images/imgbg.jpg');
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .f-section-button {
   font-family: 'Roboto';
@@ -172,6 +183,11 @@ p {
   cursor: pointer;
   margin-top: 15px;
 }
+/* .background-slider {
+  background-image: url("../images/imgbg.jpg");
+  max-width: 1600px;
+  margin: 0 auto;
+} */
 /* lorem ipsum section */
 .lor-ips-ul {
   display: flex;
@@ -227,13 +243,15 @@ p {
 }
 .team-card {
   background: var(--white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2); */
   border-radius: 0px 0px 4px 4px;
   margin: 0;
   align-items: center;
   text-align: center;
   justify-content: center;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .team-ul {
   list-style: none;
@@ -241,7 +259,7 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
- gap: 30px;
+  gap: 30px;
 }
 .team-name {
   font-size: 16px;
@@ -348,7 +366,7 @@ p {
   margin-top: 50px;
   margin-bottom: 94px;
   padding: 0px;
-  gap: 30px
+  gap: 30px;
   /* list-style: none;
   display: flex;
   flex-direction: row;
@@ -381,12 +399,6 @@ p {
   flex-direction: row;
   text-decoration: none;
 }
-/* .shift-agencja {
-  padding-left: 93px;
-}
-.shift-web {
-  padding-left: 215px;
-} */
 .contact {
   list-style: none;
   display: flex;
@@ -435,13 +447,144 @@ p {
 .background-color {
   background-color: var(--white);
 }
- 
-  /* width: 270px;
-  height: 368px;
-  border-color: var(--productborder);
-  border-style: solid;
+.box-shadow:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+/* Index Ikony nad lorem ipsum */
+.box-icons-lorem {
+  width: 270px;
+  height: 120px;
+  background-color: var(--notwhite);
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.icons-lorem {
+  margin: 25px 100px;
+  background-position: 50% 50%;
+  /* Ikony kontaktów */
+}
+.icon-header-gap {
+  margin-right: 10px;
+}
+.envelope-icon,
+.smartphone-icon {
+  fill: var(--grey);
+  transition: 0.2s;
+}
+.icon-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.envelope-icon:hover,
+.envelope-icon:focus,
+.smartphone-icon:hover,
+.smartphone-icon:focus {
+  fill: var(--blue);
+  transition: 0.2s;
+}
+
+/* Social Icons */
+.box-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.icon-social {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   background-color: var(--white);
-  border-radius: 0px 0px 4px 4px;
-  padding-top: 280px;
-} */ */
-/* "outbox-main" - celowo skomentowane. Jeszcze nad tym pracuję. */
+  fill: var(--icon-inactive);
+}
+.icon-social:hover svg,
+.icon-social:focus svg {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--blue);
+  fill: var(--white);
+}
+.box-circle {
+  width: 44px;
+  height: 44px;
+}
+/* NASI KLIENCI */
+.box-icons-clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  background-color: var(--white);
+  border: 1px solid var(--icon-inactive);
+  border-radius: 4px;
+  transition: 0.4s;
+}
+.box-icons-clients:hover svg,
+.box-icons-clients:focus svg,
+.box-icons-clients:hover,
+.box-icons-clients:focus {
+  fill: var(--blue);
+  border-color: var(--blue);
+  transition: 0.4s;
+}
+.icon-clients {
+  fill: var(--icon-inactive);
+  transition: 0.4s;
+}
+.box-our-clients {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  list-style: none;
+}
+.our-clients-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  color: var(--notblack);
+  padding: 0 0 50px 0;
+}
+/* FOOTER ICONS */
+.social-heading-footer {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--notwhite);
+  margin-bottom: 20px;
+}
+.box-socials-footer {
+  margin-top: 12px;
+  margin-left: 171px;
+}
+.socials-footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.icon-social-footer {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--grey);
+  fill: var(--white);
+  transition: 0.2s;
+}
+.icon-social-footer:hover svg,
+.icon-social-footer:focus svg {
+  transition: 0.2s;
+  background-color: var(--blue);
+}
