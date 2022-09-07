@@ -153,14 +153,12 @@ ul {
   text-align: center;
 }
 .f-section-background {
-  background-color: var(--darkgrey);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 200px 0;
-  /* width: 100%; */
-  background-image: url('../images/imgbg.jpg');
+  width: 100%;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -183,11 +181,19 @@ ul {
   cursor: pointer;
   margin-top: 15px;
 }
-/* .background-slider {
-  background-image: url("../images/imgbg.jpg");
+.background-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background: rgba(47, 48, 58, 40%) url('../images/imgbg.jpg');
+  background-blend-mode: darken;
+  width: 100%;
+  height: 600px;
   max-width: 1600px;
   margin: 0 auto;
-} */
+}
 /* lorem ipsum section */
 .lor-ips-ul {
   display: flex;
@@ -239,12 +245,10 @@ ul {
   line-height: 1.166;
   text-align: center;
   color: var(--notblack);
-  padding: 0 0 50px 0;
+  /* padding: 0 0 50px 0;        zmieniono, żeby uwzględnić padding z klasy h2 */
 }
 .team-card {
   background: var(--white);
-  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2); */
   border-radius: 0px 0px 4px 4px;
   margin: 0;
   align-items: center;
@@ -309,6 +313,9 @@ ul {
 .footer-ul-style {
   list-style: none;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 .footer-mail {
   font-family: 'Roboto';
@@ -330,15 +337,17 @@ ul {
   background-color: var(--notwhite);
   border-style: none;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
   display: flex;
   flex-direction: center;
   align-items: center;
   justify-content: center;
-  height: 38px;
-  width: 121px;
+  /* height: 38px;
+  width: 121px; */
   cursor: pointer;
   padding: 6px 22px;
+  transition: 0.25s;
+  line-height: 30px;
 }
 /* Project Base */
 .project-title {
@@ -464,6 +473,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 .envelope-icon:hover,
 .envelope-icon:focus,
@@ -545,7 +555,6 @@ ul {
 /* FOOTER ICONS */
 .box-socials-footer {
   margin-top: 12px;
-  margin-left: 171px;
   align-items: flex-start;
   flex-direction: column;
   display: flex;
@@ -579,7 +588,14 @@ ul {
   transition: 0.2s;
   background-color: var(--blue);
 }
-.footer-boxes {
+.footer-pos {
+  /* padding-top: 60px; */
   display: flex;
   flex-direction: column;
-  
+  gap: 20px;
+}
+.footer-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
