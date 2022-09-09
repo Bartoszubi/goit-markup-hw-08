@@ -603,3 +603,7 @@ ul {
   flex-direction: row;
   gap: 70px;
 }
+.footer-test {
+  list-style: none;
+  text-decoration: none;
+}
