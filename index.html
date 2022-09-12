@@ -57,7 +57,7 @@
         <h1 class="f-section-text f-section-background">
           EFEKTYWNE ROZWIĄZANIA <br />
           DLA WASZEGO BIZNESU
-          <button type="button" class="f-section-button">Zamów usługę</button>
+          <button type="button" class="f-section-button"data-modal-open>Zamów usługę</button>
         </h1>
       </section>
       <section>
@@ -120,15 +120,18 @@
       </section>
       <section class="section container">
         <h2 class="services-header no-padding">Czym się zajmujemy?</h2>
-        <ul class="services-img">
-          <li>
+            <ul class="services-img">
+          <li class="services-anchor">
             <img src="images/box-a.jpg" alt="computer-image" width="370" height="294" />
+            <p class="services-caption">Aplikacje komputerowe</p>
           </li>
-          <li>
+           <li class="services-anchor">
             <img src="images/box-b.jpg" alt="computer-image" width="370" height="294" />
+            <p class="services-caption">Aplikacje mobilne</p>
           </li>
-          <li>
+           <li class="services-anchor">
             <img src="images/box-c.jpg" alt="computer-image" width="370" height="294" />
+            <p class="services-caption">Rozwiązania graficzne</p>
           </li>
         </ul>
       </section>
@@ -478,5 +481,15 @@
         </div>
       </div>
     </footer>
+      <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button class="modal-window-close-button" type="button" data-modal-close>
+          <svg width="30" height="30">
+            <use href="./images/icons.svg#icon-vector" width="10" height="10" x="3" y="10"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
