@@ -479,7 +479,19 @@
               </svg>
             </a>
         </div>
-      </div>
+        </div>
+       <div class="footer-newsletter">
+          <h4 class="footer-header">Zapisz się do newslettera</h4>
+          <form name="newsletter" autocomplete="on" class="form-newsletter">
+            <input type="email" name="email" placeholder="E-mail" class="input-newsletter" />
+            <button type="submit" class="button-newsletter">
+              Zapisz się
+              <svg width="24" height="24" class="icon-button-newsletter">
+                <use xlink:href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
     </footer>
        <div class="backdrop is-hidden" data-modal>
       <div class="modal-box">
@@ -488,6 +500,51 @@
             <use xlink:href="./images/icons.svg#icon-vector"></use>
           </svg>
         </button>
+        <div class="header-modal-box">Zostaw swoje dane w formularzu poniżej</div>
+        <form name="contact" autocomplete="on" class="form-modal">
+          <label for="user-name" class="label-modal">Imię</label>
+        <div class="form-highlight-field">
+          <input type="text" name="name" class="input-modal" id="user-name" />
+            <svg width="12" height="12" class="input-modal-icon icon-1">
+              <use xlink:href="./images/icons.svg#icon-1"></use>
+            </svg>
+          </div>
+          <label for="user-phone" class="label-modal">Telefon</label>
+          <div class="form-highlight-field">
+            <input type="tel" name="phone" class="input-modal" id="user-phone" />
+            <svg width="13" height="13" class="input-modal-icon icon-2">
+              <use xlink:href="./images/icons.svg#icon-2"></use>
+            </svg>
+          </div>
+          <label for="user-mail" class="label-modal">Email</label>
+          <div class="form-highlight-field">
+            <input type="email" name="mail" class="input-modal" id="user-mail" />
+            <svg width="15" height="12" class="input-modal-icon icon-3">
+              <use xlink:href="./images/icons.svg#icon-3"></use>
+            </svg>
+          </div>
+          <label for="user-comment" class="label-modal">Komentarz</label>
+          <div class="form-highlight-field">
+            <textarea
+              name="comment"
+              id="user-comment"
+              placeholder="Wprowadź tekst"
+              class="input-modal-text"></textarea>
+          </div>
+          <div class="user-agreements">
+            <input
+              type="checkbox"
+              required
+              name="agreement"
+              class="box-custom box-hidden"
+              id="user-agreement" />
+            <p class="agreement-text">
+              Oświadczam, iż akceptuję <a href="#" class="agreement-link">Regulamin</a> i
+              <a href="#" class="agreement-link">Politykę Prywatności</a>.
+            </p>
+          </div>
+          <button type="submit" class="button-modal-send">Wyślij</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
