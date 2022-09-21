@@ -831,19 +831,22 @@ ul {
   border-color: var(--blue);
   outline: none;
 }
+.input-modal {
+  margin-top: 4px;
+}
 .icon-1 {
   position: absolute;
-  top: 115px;
+  top: 119px;
   left: 55px;
 }
 .icon-2 {
   position: absolute;
-  top: 178px;
+  top: 185px;
   left: 54.27px;
 }
 .icon-3 {
   position: absolute;
-  top: 243px;
+  top: 254px;
   left: 53.5px;
 }
 .input-modal-text {
