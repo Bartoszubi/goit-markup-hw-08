@@ -868,6 +868,10 @@ ul {
 }
 .agreement-text {
   padding-left: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
 }
 .agreement-link {
   color: var(--blue);
