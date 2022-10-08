@@ -1,32 +1,33 @@
 .clients {
-  padding: 94px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  &__item {
+    flex-basis: calc((100% - 30px) / 2);
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-&__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px;
-  height: 92px;
-  border: 1px solid $iconcolor;
-  fill: $iconcolor;
-  border-radius: 4px;
-  transition: 250ms fill $transition, 250ms border-color $transition;
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid $iconcolor;
+    fill: $iconcolor;
+    border-radius: 4px;
+    transition: 250ms fill $transition, 250ms border-color $transition;
 
-&:hover,
-&:focus {
-  fill: $blue;
-  border-color: $blue;
-}
-}
-&__heading {
-   display: flex;
+    &:hover,
+    &:focus {
+      fill: $blue;
+      border-color: $blue;
+    }
+  }
+  &__heading {
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -34,11 +35,35 @@
     text-align: center;
     color: $notblack;
     margin: 0px 0 50px 0;
-}
-&__list {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-}
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    // padding: 0 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .clients {
+      &__list {
+        max-width: 100%;
+        margin: 0;
+      }
+
+      &__item {
+        flex-basis: calc((100% - 60px) / 3);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .clients {
+      &__item {
+        flex-basis: calc((100% - 150px) / 6);
+      }
+    }
+  }
 }
