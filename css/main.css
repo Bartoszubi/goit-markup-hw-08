@@ -35,7 +35,7 @@ body {
 }
 
 .section {
-  padding: 60px 15px 60px 15px;
+  padding: 60px 0px;
   margin: 0 auto;
 }
 
@@ -458,6 +458,7 @@ body {
     gap: 0;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    width: 100%;
   }
   .footer__contact {
     -webkit-box-align: start;
@@ -849,9 +850,8 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 30px;
-  padding: 60px 15px 60px 15px;
+  padding: 60px 0px;
   justify-content: center;
-  max-width: 768px;
   margin: 0 auto;
 }
 .our-speciality__lorem {

@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: 'Roboto', 'Raleway', sans-serif;
   color: $grey;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -13,10 +13,9 @@ body {
   max-width: 1200px;
 }
 .section {
-  padding: 60px 15px 60px 15px;
+  padding: 60px 0px;
   margin: 0 auto;
 }
-
 
 // @media screen and (min-width: 1200px) {
 //   .container {
@@ -24,5 +23,3 @@ body {
 //     width: 1200px;
 //   }
 // }
-
-
