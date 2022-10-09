@@ -850,6 +850,9 @@ body {
           flex-direction: row;
   gap: 30px;
   padding: 60px 15px 60px 15px;
+  justify-content: center;
+  max-width: 768px;
+  margin: 0 auto;
 }
 .our-speciality__lorem {
   -ms-flex-preferred-size: calc((100% - 0px) / 1);
