@@ -209,33 +209,17 @@
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    height: 581px;
     margin: auto;
+    padding-bottom: 40px;
     &__heading {
       line-height: 1.15;
     }
 
     &__input-icon {
-      &--position-1 {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 15px;
-      }
-
-      &--position-2 {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 15px;
-      }
-
-      &--position-3 {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 15px;
-      }
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 15px;
     }
   }
 }

@@ -29,6 +29,9 @@
       color: $notblack;
       transition: 250ms $transition;
 
+      & --active {
+        color: $blue;
+      }
       &:hover,
       &:focus {
         color: $blue;
@@ -46,9 +49,9 @@
     transform: translateY(30px);
     border-radius: 2px;
   }
-  &__active {
-    color: $blue;
-  }
+  // &__active {
+  //   color: $blue;
+  // }
   &__contacts {
     flex-direction: row;
     display: none;
@@ -104,7 +107,8 @@
       gap: 46px;
       display: flex;
       justify-content: space-between;
-      margin-right: 60px;
+      margin-right: auto;
+      // margin-left: 60px;
     }
 
     &__contacts {

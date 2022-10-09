@@ -82,10 +82,10 @@
     color: $white;
     line-height: 1.193;
     letter-spacing: 0.03em;
+  }
 
-    &-color {
-      color: $blue;
-    }
+  &__logo-color {
+    color: $blue;
   }
 
   &__links {
