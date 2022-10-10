@@ -850,7 +850,7 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 30px;
-  padding: 60px 0px;
+  padding: 60px 15px;
   justify-content: center;
   margin: 0 auto;
 }
@@ -916,6 +916,7 @@ body {
   .our-speciality__header {
     font-weight: 700;
     color: #212121;
+    text-align: left;
   }
   .our-speciality__text {
     line-height: 1.71;
